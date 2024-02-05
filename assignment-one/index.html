@@ -1,0 +1,198 @@
+<!-- MOHAMMED | Zoo Explorer -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Explorer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right top, #000000, #3a3a3a);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #ffd700;
+        }
+
+        h1 {
+          font-size: 5em;
+          text-shadow: 2px 2px 4px rgba(0, 0, 4, 0.5);
+        }
+        header, nav, footer {
+            background: #000000;
+            padding: 1em;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            text-align: center;
+            color: #ffd700;
+        }
+        nav {
+            text-align: center;
+            height: 70px;
+        }
+        nav a {
+            display: inline-block;
+            color: #ffd700;
+            text-decoration: none;
+            padding: 20px 30px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background: linear-gradient(to right top, #b49b00, #9c8400);
+            color: #fff;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 20px auto;
+            background: linear-gradient(to right top, #000000, #3a3a3a);
+            box-shadow: 0 0 10px rgba(204, 204, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            color: #fff;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        article {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #000000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(204, 204, 0, 0.1);
+        }
+        h2 {
+            background: linear-gradient(to right top, #ffd700, #e4bd3e);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: #000000;
+            color: #ffd700;
+            font-size: 0.5em;
+        }
+        #home {
+            background: url('https://source.unsplash.com/800x400/?zoo') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px;
+        }
+        #adventure-btn {
+            background: #e4bd3e;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        #adventure-btn:hover {
+            background: #b49b00;
+        }
+        #demo {
+            font-size: 1.5em;
+            margin-top: 20px;
+            opacity: 0.8;
+            animation: fadeIn 1.5s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 0.8;
+                transform: translateY(0);
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zoo Explorer</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#animals">Animals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <button id="adventure-btn" onclick="showMessage()">Click here to start your adventure</button>
+            <p id="demo"></p>
+        </section>
+        <section id="animals">
+            <h2>Meet Our Diverse Zoo Animals</h2>
+            <p>Explore the profiles of some of the incredible animals in our zoo!</p>
+
+            <!-- Animal 1 -->
+            <article>
+                <h3>Lion</h3>
+                <img src="https://source.unsplash.com/800x600/?lion" alt="Lion Image">
+                <p>The lion, scientifically known as Panthera leo, is a majestic big cat and a symbol of strength and courage. Lions are social animals that live in groups called prides. Males are easily recognized by their impressive manes. They are carnivores and are known for their powerful roars.</p>
+            </article>
+
+            <!-- Animal 2 -->
+            <article>
+                <h3>Monkey</h3>
+                <img src="https://source.unsplash.com/800x600/?monkey" alt="Monkey Image">
+                <p>Monkeys are intelligent and playful primates found in tropical and subtropical regions. They belong to the order Primates and vary greatly in size and behavior. Monkeys are known for their agility, social interactions, and diverse species, ranging from the tiny pygmy marmoset to the large mandrill.</p>
+            </article>
+
+            <!-- Animal 3 -->
+            <article>
+                <h3>Giraffe</h3>
+                <img src="https://source.unsplash.com/800x600/?giraffe" alt="Giraffe Image">
+                <p>The giraffe, with its scientific name Giraffa camelopardalis, is the tallest living terrestrial animal. Known for its long neck and distinctive spotted coat, giraffes are herbivores found in the savannas of Africa. They use their long necks to reach high branches and have a unique spotted pattern that helps them camouflage in their natural habitat.</p>
+            </article>
+
+            <!-- Animal 4 -->
+            <article>
+                <h3>Penguin</h3>
+                <img src="https://source.unsplash.com/800x600/?penguin" alt="Penguin Image">
+                <p>Penguins are flightless birds adapted for life in the water. They are known for their distinctive black and white plumage, waddling walk, and excellent swimming abilities. Penguins are found in the Southern Hemisphere, with species like the Emperor Penguin known for their resilience in harsh Antarctic conditions.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Zoo Explorer. All rights reserved.
+    </footer>
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML = "Hello! You've just embarked on a wild adventure. Get ready to explore the fascinating world of zoo animals!";
+        }
+    </script>
+</body>
+</html>
