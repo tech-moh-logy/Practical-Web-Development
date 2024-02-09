@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right top, #000000, #3a3a3a);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #ffd700;
+}
+
+h1 {
+  font-size: 5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 4, 0.5);
+}
+header, nav, footer {
+    background: #000000;
+    /* background: (to right top, #5c0700, #831100); */
+    padding: 1em;
+}
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    color: #ffd700;
+}
+nav {
+    text-align: center;
+    height: 70px;
+}
+nav a {
+    display: inline-block;
+    color: #ffd700;
+    text-decoration: none;
+    padding: 20px 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+}
+nav a:hover {
+    background: linear-gradient(to right top, #ffd700, #ffd900);
+    color: #000000;
+    font-weight: 900;
+    box-shadow: 1px 1px 50px ##ffd000;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+    background: linear-gradient(to right top, #000000, #3a3a3a);
+    box-shadow: 0 0 10px rgba(204, 204, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+}
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+article {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(204, 204, 0, 0.1);
+}
+h2 {
+    background: linear-gradient(to right top, #ffd700, #e4bd3e);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+p {
+    color: #ccc;
+    line-height: 1.6;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #000000;
+    color: #ffd700;
+    font-size: 0.5em;
+}
+#home {
+    background: url('https://source.unsplash.com/800x400/?zoo') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+#adventure-btn {
+    background: #e4bd3e;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+#adventure-btn:hover {
+    background: #b49b00;
+}
+#demo {
+    font-size: 1.5em;
+    margin-top: 20px;
+    opacity: 0.8;
+    animation: fadeIn 1.5s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
