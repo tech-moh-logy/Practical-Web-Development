@@ -4,7 +4,7 @@
 
 These websites are deployed to GitHub Pages: 
 
-  - [Live Demo of Assignment One](https://mohammeddigitalsage.github.io/Assignment-1-Zoo/) → [Explore Further]([https://github.com/tech-moh-logy/Practical-Web-Development/new/main/assignment-one](https://github.com/tech-moh-logy/Practical-Web-Development/blob/main/assignment-one/README.md))
+  - [Live Demo of Assignment One](https://mohammeddigitalsage.github.io/Assignment-1-Zoo/) → [Explore Further](https://github.com/tech-moh-logy/Practical-Web-Development/blob/main/assignment-one/README.md)
   - [Live Demo of Assignment Two](#) → [Explore Further](#)
   - [Live Demo of Assignment Three](#) → [Explore Further](#)
   - [Live Demo of Assignment Four](#) → [Explore Further](#)
